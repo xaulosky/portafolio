@@ -1,0 +1,99 @@
+
+:root{
+    --cafe : #3C1518;
+    --marron : #69140E;
+    --brown : rgba(164, 66, 0, 0.295);
+    --naranja : #D58936;
+    --amarillo : #FFF94F;
+  }
+  
+  *,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+  }
+html{
+box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image:url('email-pattern.png');
+    background-repeat:repeat;
+    background-position: center;
+}
+.contenedor{
+    margin: 0 auto;
+    max-width:1200px;
+    width:95%;
+}
+.contenido{
+    width:100%;
+    /* min-height: 500px; */
+    height: calc(100vh - 140px);
+}
+.menu{
+    height: 40px;
+}
+header{
+    height:100px;
+    width:100%;
+    background-color:var(--brown);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    flex-direction:column;
+    
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width:100%;
+    font-size: 2rem;
+    color:white;
+    text-align: center;
+}
+p span{
+    color:blue;
+}
+
+.menu{
+    
+    text-align: center;
+    width:100%;
+        background-color:rgba(0,0,0,.5);
+    background:transparent;
+    background-color:rgba(0,0,0,.5);
+    
+}
+.menu nav a{
+    color:#fff;
+    text-decoration:none;
+    padding:10px;
+    transition: color .5s ease-in-out;
+}
+.menu nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu nav a:hover{
+    color:rgba(0, 137, 172, 0.5);
+    transition: color .5s ease-in-out;
+}
+
+@media (max-width:768px){
+    
+    .logo{
+        
+    }
+    .menu{
+        width:100%;
+        
+    }
+    .menu nav{
+        
+    }
+}
